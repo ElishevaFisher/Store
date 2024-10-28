@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.buttonContainer {
+  margin-bottom: 20px; /* רווח בין הכפתורים לעיגולים */
+}

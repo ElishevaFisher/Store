@@ -1,0 +1,19 @@
+.circleActive {
+  width: 50px; /* קוטר העיגול */
+  height: 50px; /* קוטר העיגול */
+  background-color: rgb(219, 22, 22); /* צבע העיגול */
+  border-radius: 50%;
+}
+
+.circleNotActive {
+  width: 50px; /* קוטר העיגול */
+  height: 50px; /* קוטר העיגול */
+  background-color: rgb(238, 231, 231); /* צבע העיגול */
+  border-radius: 50%;
+}
+.circleContainer {
+    display: flex; /* הופך את הקונטיינר לפלקס */
+    justify-content: center; /* מסדר את העיגולים במרכז */
+    gap: 10px; /* מרווח בין העיגולים */
+  }
+  

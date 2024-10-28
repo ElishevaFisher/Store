@@ -1,0 +1,5 @@
+.productList {
+    display: flex;
+    flex-direction: column; /* מציג את המוצרים בעמודה */
+    gap: 10px; /* מרווח בין המוצרים */
+}
