@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/Home/Home.jsx"
 import Jewelery from "./components/Jewelery/Jewelery.jsx";
 import Electronics from "./components/Electronics/Electronics.jsx";
+import Books from "./components/Books/Books.jsx"
 
 // import Wizard from "./components/Wizard/Wizard";
 
@@ -23,6 +24,9 @@ function App() {
               <li className="nav-item">
                 <NavLink to="/Electronics">Electronics</NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink to="/Books">Books</NavLink>
+              </li>
             </ul>
           </nav>
         </div>
@@ -30,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Jewelery" element={<Jewelery />} />
           <Route path="/Electronics" element={<Electronics />} />
+          <Route path="/Books" element={<Books />} />
         </Routes>
       </Router>
     </div>

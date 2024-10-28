@@ -9,3 +9,7 @@ export const getJwelleryProducts = () => {
 export const getElectronicsProducts = () => {
     return fetch('https://fakestoreapi.com/products/category/electronics');
 }
+
+export const getBooksProducts = () => {
+    return fetch('http://localhost:8080/books');
+}
