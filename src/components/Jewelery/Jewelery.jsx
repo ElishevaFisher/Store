@@ -1,8 +1,7 @@
 
 import React, {useEffect, useState} from 'react';
 import {getJwelleryProducts} from '../../service/store.js';
-import Styles from './jewelery.module.css'
-
+import style from './Jewelery.module.css'
 function Jewelery() {
     const [products, setProducts]= useState([]);
     const [loading, setLoading]= useState(true);
@@ -20,12 +19,13 @@ function Jewelery() {
         });
     },[]);
     return(
-        <div className={Styles.productList}>
+        <div className={style.productList}>
             {
                 products.map(product => (
-                    <div key={product.id}>
-                        <h2>{product.title}</h2>
-                        <p>{product.price}</p>
+                    <div key={product.id} className={style.productCard}>
+                        <h2  className={style.productTitle}>{product.title}</h2>
+                        <img src={product.image} alt={product.title} className={style.productImage}/>
+                        <p className={style.productPrice}>${product.price}</p>
                     </div>
                 ))
             }
